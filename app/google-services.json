@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "297438559221",
+    "firebase_url": "https://appmoviles-c9f82.firebaseio.com",
+    "project_id": "appmoviles-c9f82",
+    "storage_bucket": "appmoviles-c9f82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297438559221:android:ccdc9c02dec7357e",
+        "android_client_info": {
+          "package_name": "com.example.davidcabello.proyectomoviles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297438559221-ep9uo46h8vi6djjv5d64rqe3j2pgvp0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBqoGzW9aYXzRBkuCE1eGbIxPFtqxD9xk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
