@@ -18,21 +18,11 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
-
     <Button
         android:text="categories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/buttonCat"
         android:onClick="GotoCategories"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
@@ -41,16 +31,44 @@
         android:text="user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
+        android:id="@+id/buttonUser"
         android:onClick="GotoUsuario"
-        android:layout_below="@+id/button3"
+        android:layout_below="@+id/buttonCat"
         android:layout_alignParentStart="true" />
 
     <Button
         android:text="logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_above="@+id/button3"
+        android:id="@+id/buttonLO"
+        android:layout_above="@+id/buttonCat"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/eTCategory"
+        android:text="categoría"
+        android:layout_below="@+id/eTPregunta"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/eTPregunta"
+        android:text="pregunta"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="preguntar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/butPregunta"
+        android:layout_above="@+id/buttonLO"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

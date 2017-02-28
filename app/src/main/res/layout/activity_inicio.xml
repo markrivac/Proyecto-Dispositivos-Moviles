@@ -31,7 +31,7 @@
         android:text="login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/buttonLO"
         android:layout_above="@+id/button2"
         android:layout_alignParentStart="true"
         android:onClick="GotoLogin" />
@@ -40,7 +40,7 @@
         android:text="categories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/buttonCat"
         android:layout_below="@+id/button2"
         android:layout_alignParentStart="true"
         android:onClick="GotoCategories" />

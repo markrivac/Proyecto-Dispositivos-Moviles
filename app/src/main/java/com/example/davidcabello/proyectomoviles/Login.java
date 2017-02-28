@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,6 +40,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         b5 = (Button) findViewById(R.id.button5);
         b8 = (Button) findViewById(R.id.button8);
         b5.setOnClickListener(this);
+
         progressDialog = new ProgressDialog(this);
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -80,7 +82,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             progressDialog.dismiss();
                             finish();
                             startActivity(new Intent(getApplicationContext(), InicioUser.class));
-
                         }
                     }
                 });
