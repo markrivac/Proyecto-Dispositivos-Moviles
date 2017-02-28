@@ -6,9 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Categoria extends AppCompatActivity {
 
     TextView pregunta;
+    final FirebaseDatabase database = FirebaseDatabase.getInstance().addValueEventListener();
+    private FirebaseAuth firebaseAuth;
+    private DatabaseReference ref;
+    private DatabaseReference questionRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +22,12 @@ public class Categoria extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categoria);
 
-        /*pregunta.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(this, Pregunta.class);
-                startActivity(intent);
-            }
-        });*/
+        pregunta.setText();
     }
+/*
+    public void goToQuestion(View v){
+        Intent intent = new Intent(this, Pregunta.class);
+        startActivity(intent);
+    }
+*/
 }

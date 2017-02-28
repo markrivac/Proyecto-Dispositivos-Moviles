@@ -16,11 +16,11 @@ public class Categorias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-/*
+
         algorithms = (ImageButton)findViewById(R.id.algor);
         dataBase = (ImageButton)findViewById(R.id.datab);
         networks = (ImageButton)findViewById(R.id.network);
-        videoGames = (ImageButton)findViewById(R.id.videoG);*/
+        videoGames = (ImageButton)findViewById(R.id.videoG);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categorias);

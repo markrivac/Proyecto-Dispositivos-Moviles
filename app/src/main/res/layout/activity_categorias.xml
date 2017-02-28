@@ -26,7 +26,47 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageButton
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/database"
+                android:id="@+id/datab"
+                android:layout_width="180dp"
+                android:onClick="goToDatabase" />
+
+            <ImageButton
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/algorithms"
+                android:id="@+id/algor"
+                android:layout_width="180dp"
+                android:onClick="goToAlgorithms" />
+
+            <ImageButton
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/videogames"
+                android:id="@+id/videoG"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_width="180dp"
+                android:onClick="goToVideoGames" />
+
+            <ImageButton
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/networks"
+                android:id="@+id/network"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_width="180dp"
+                android:onClick="goToNetworks" />
         </GridLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
