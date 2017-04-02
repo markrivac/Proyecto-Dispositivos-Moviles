@@ -3,9 +3,11 @@ package com.example.davidcabello.proyectomoviles;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,14 +21,18 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import org.w3c.dom.Text;
 
+import butterknife.Bind;
+
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
-    EditText e2;
-    EditText e3;
-    Button b5;
-    Button b8;
+
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
+
+    @Bind(R.id.editText2) EditText e2;
+    @Bind(R.id.editText3) EditText e3;
+    @Bind(R.id.button5) Button b5;
+    @Bind(R.id.link_signup) TextView _signupLink;
 
 
     @Override
@@ -37,8 +43,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         e2 = (EditText) findViewById(R.id.editText2);
         e3 = (EditText) findViewById(R.id.editText3);
         b5 = (Button) findViewById(R.id.button5);
-        b8 = (Button) findViewById(R.id.button8);
         b5.setOnClickListener(this);
+
         progressDialog = new ProgressDialog(this);
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -80,7 +86,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             progressDialog.dismiss();
                             finish();
                             startActivity(new Intent(getApplicationContext(), InicioUser.class));
-
                         }
                     }
                 });
@@ -100,11 +105,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-
-    public void getBack(View v){
-
-        finish();
-    }
 
 
 }

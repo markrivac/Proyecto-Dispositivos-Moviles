@@ -10,47 +10,69 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.davidcabello.proyectomoviles.Inicio">
 
-    <TextView
-        android:text="Ask your question:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:hint="Ask your question"
         android:ems="10"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
+        android:id="@+id/eTPregunta"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/buttonCat"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:text="categories"
-        android:layout_width="match_parent"
+        android:id="@+id/butPregunta"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:text="Submit question"
+        android:layout_below="@+id/eTCategory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:id="@+id/buttonCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="GotoCategories"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:text="categories"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttonUser" />
 
     <Button
-        android:text="user"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonUser"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
         android:onClick="GotoUsuario"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentStart="true" />
+        android:text="user"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttonLO" />
 
     <Button
+        android:id="@+id/buttonLO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_above="@+id/button3"
+        android:inputType="textPersonName"
+        android:hint="Category of your question"
+        android:ems="10"
+        android:id="@+id/eTCategory"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/eTPregunta"
         android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/listView_Questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/butPregunta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
 </RelativeLayout>

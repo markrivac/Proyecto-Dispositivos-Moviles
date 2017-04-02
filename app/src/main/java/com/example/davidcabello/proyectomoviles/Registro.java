@@ -94,9 +94,5 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
 
     }
 
-    public void getBack(View v){
-        finish();
-    }
-
 
 }

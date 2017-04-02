@@ -10,48 +10,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.davidcabello.proyectomoviles.Inicio">
 
-    <TextView
-        android:text="Ask your question:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:text="register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:layout_centerVertical="true"
+        android:onClick="GotoRegister"
+        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
-        android:onClick="GotoRegister" />
-
-    <Button
-        android:text="login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_above="@+id/button2"
-        android:layout_alignParentStart="true"
-        android:onClick="GotoLogin" />
+        android:layout_marginTop="73dp" />
 
     <Button
         android:text="categories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/buttonCat"
+        android:onClick="GotoCategories"
         android:layout_below="@+id/button2"
-        android:layout_alignParentStart="true"
-        android:onClick="GotoCategories" />
+        android:layout_alignParentStart="true" />
 
-    <EditText
+    <Button
+        android:text="login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
+        android:id="@+id/buttonLO"
+        android:onClick="GotoLogin"
+        android:layout_below="@+id/buttonCat"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Welcome to our App"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
