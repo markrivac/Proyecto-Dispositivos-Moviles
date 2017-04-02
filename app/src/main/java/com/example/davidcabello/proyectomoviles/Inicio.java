@@ -21,6 +21,10 @@ public class Inicio extends AppCompatActivity {
         setContentView(R.layout.activity_inicio);
 
         t1 = (TextView) findViewById(R.id.textView);
+<<<<<<< HEAD
+=======
+        e1 = (EditText) findViewById(R.id.editText);
+>>>>>>> 6e522aa30473121a0190f3a11cbca36fe6878d27
         b1 = (Button) findViewById(R.id.buttonLO);
         b2 = (Button) findViewById(R.id.button2);
         b3 = (Button) findViewById(R.id.buttonCat);

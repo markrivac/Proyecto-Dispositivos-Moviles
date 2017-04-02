@@ -6,6 +6,7 @@ package com.example.davidcabello.proyectomoviles;
 
 public class QuestionFB {
 
+<<<<<<< HEAD
     public void setQuestion(String question) {
         this.question = question;
     }
@@ -30,6 +31,8 @@ public class QuestionFB {
         return userID;
     }
 
+=======
+>>>>>>> 6e522aa30473121a0190f3a11cbca36fe6878d27
     public String question;
     public String category;
     public String userID;
@@ -43,9 +46,12 @@ public class QuestionFB {
         this.userID = userID;
     }
 
+<<<<<<< HEAD
     public String toString(){
         return this.question + " " + this.category + " " + this.userID;
     }
 
+=======
+>>>>>>> 6e522aa30473121a0190f3a11cbca36fe6878d27
 
 }

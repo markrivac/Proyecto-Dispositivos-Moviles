@@ -49,4 +49,8 @@ public class Categorias extends AppCompatActivity {
         intent.putExtra("CATEGORY","videojuegos");
         startActivity(intent);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6e522aa30473121a0190f3a11cbca36fe6878d27
