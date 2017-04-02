@@ -29,7 +29,6 @@ public class InicioUser extends AppCompatActivity implements View.OnClickListene
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
     private FirebaseAuth firebaseAuth;
     private DatabaseReference ref;
-    private DatabaseReference questionRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,11 +117,8 @@ public class InicioUser extends AppCompatActivity implements View.OnClickListene
         }
 
         String user = firebaseAuth.getCurrentUser().getUid();
-        questionRef.push().setValue(new QuestionFB(pregunta, categoria, user));
+        ref.push().setValue(new QuestionFB(pregunta, categoria, user));
         Toast.makeText(this, "Question submitted", Toast.LENGTH_SHORT).show();
-        QuestionFB questionFB = new QuestionFB(pregunta, categoria, user);
-        questionRef.push().setValue(questionFB);
-        Toast.makeText(this, "Pregunta hecha", Toast.LENGTH_SHORT).show();
 
     }
 
