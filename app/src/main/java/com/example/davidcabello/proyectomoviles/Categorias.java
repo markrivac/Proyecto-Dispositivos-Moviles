@@ -17,40 +17,36 @@ public class Categorias extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        algorithms = (ImageButton)findViewById(R.id.algor);
-        dataBase = (ImageButton)findViewById(R.id.datab);
-        networks = (ImageButton)findViewById(R.id.network);
-        videoGames = (ImageButton)findViewById(R.id.videoG);
+        algorithms = (ImageButton) findViewById(R.id.algor);
+        dataBase = (ImageButton) findViewById(R.id.datab);
+        networks = (ImageButton) findViewById(R.id.network);
+        videoGames = (ImageButton) findViewById(R.id.videoG);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categorias);
     }
 
-    public void goToAlgorithms(View v){
+    public void goToAlgorithms(View v) {
         Intent intent = new Intent(this, Categoria.class);
-        intent.putExtra("CATEGORY","algoritmos");
+        intent.putExtra("CATEGORY", "algoritmos");
         startActivity(intent);
     }
 
-    public void goToDatabase(View v){
+    public void goToDatabase(View v) {
         Intent intent = new Intent(this, Categoria.class);
-        intent.putExtra("CATEGORY","bases");
+        intent.putExtra("CATEGORY", "bases");
         startActivity(intent);
     }
 
-    public void goToNetworks(View v){
+    public void goToNetworks(View v) {
         Intent intent = new Intent(this, Categoria.class);
-        intent.putExtra("CATEGORY","redes");
+        intent.putExtra("CATEGORY", "redes");
         startActivity(intent);
     }
 
-    public void goToVideoGames(View v){
+    public void goToVideoGames(View v) {
         Intent intent = new Intent(this, Categoria.class);
-        intent.putExtra("CATEGORY","videojuegos");
+        intent.putExtra("CATEGORY", "videojuegos");
         startActivity(intent);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6e522aa30473121a0190f3a11cbca36fe6878d27
